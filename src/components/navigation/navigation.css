@@ -1,0 +1,18 @@
+.navigation {
+
+}
+
+.navigation > div {
+    padding: 15px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #A2A6AA;
+}
+
+.navigation > div.active {
+    border-bottom: 2px solid #31B099;
+    color: #fff;
+}
