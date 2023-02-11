@@ -1,0 +1,12 @@
+.card-title {
+    color: #1A1C1E;
+    letter-spacing: -0.02rem;
+}
+
+.balance {
+    color: #1A1C1E;
+    font-size: 32px;
+    line-height: 150%;
+    height: 48px;
+    gap: 9px;
+}

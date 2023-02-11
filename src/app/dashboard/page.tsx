@@ -4,9 +4,10 @@ import { Top } from "@/components/top/Top";
 import { Menu } from "@/components/menu/Menu";
 import { BreadcrumbItem, Breadcrumbs } from "@/components/breadcrumbs/Breadcrumbs";
 
-import "./page.module.css";
 import { Title } from "@/components/title/Title";
 import { Navigation, NavigationItem } from "@/components/navigation/Navigation";
+import { Card } from "@/components/card/Card";
+import { CardAction } from "@/components/cardAction/CardAction";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -45,6 +46,8 @@ export default function DashboardPage() {
                     <Navigation items={navigationItems}/>
                 </div>
             </Top>
+
+            <Card title={"Total balance"} action={<CardAction/>}/>
         </>
     );
 }
