@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { Top } from "@/components/top/Top";
 import { Menu } from "@/components/menu/Menu";
@@ -8,6 +9,8 @@ import { Title } from "@/components/title/Title";
 import { Navigation, NavigationItem } from "@/components/navigation/Navigation";
 import { Card } from "@/components/card/Card";
 import { CardAction } from "@/components/cardAction/CardAction";
+import { Button } from "@/components/button/Button";
+
 import "./page.css";
 
 const breadcrumbs: BreadcrumbItem[] = [
@@ -49,7 +52,14 @@ export default function DashboardPage() {
             </Top>
 
             <div className="card-container">
-                <Card title={"Total balance"} action={<CardAction/>}/>
+                <Card title={"Total balance"} action={<CardAction/>}>
+                    <>
+                        <Button label={"Transfer"}
+                                icon={<Image width={24} height={24} src={"/images/card-send.svg"} alt={"arrow"}/>}/>
+                        <Button label={"Receive"}
+                                icon={<Image width={25} height={25} src={"/images/card-receive.svg"} alt={"arrow"}/>}/>
+                    </>
+                </Card>
             </div>
         </>
     );

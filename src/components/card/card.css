@@ -1,6 +1,7 @@
 .card {
     border-radius: 16px;
     background-color: #fff;
+    gap: 16px;
 }
 
 .card-title {
@@ -18,4 +19,8 @@
 
 .card > .top-card {
     height: 24px;
+}
+
+.card > div:last-child {
+    gap: 6px;
 }
