@@ -1,6 +1,5 @@
+import Image from "next/image";
 import classNames from "classnames";
-
-import { Icon } from "@/components/icon/Icon";
 
 import "./breadcrumbs.css";
 
@@ -15,12 +14,12 @@ type Props = {
 
 export function Breadcrumbs({ items }: Props) {
     return (
-        <div className={"flex items-center breadcrumbs mt-3"}>
+        <div className={"flex items-center breadcrumbs mt-3 gap-3"}>
             {items.map(({ label, active }, index) => (
                 <>
                     <div key={label} className={classNames({active})}>{label}</div>
                     {(index !== items.length - 1) &&
-                        <Icon width={12} height={12} name={"arrow-right"} hasBackground={false}/>}
+                        <Image width={12} height={12} src={"/images/arrow-right.svg"} alt={"arrow"}/>}
                 </>
             ))}
         </div>

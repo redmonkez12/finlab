@@ -4,7 +4,7 @@ import "./menu.css";
 
 export function Menu() {
     return (
-        <div className={"flex pb-4"}>
+        <div className={"flex pb-6"}>
             <Icon height={22} width={22} name={"menu"}/>
             <div className={"flex ml-auto gap-2"}>
                 <Icon height={22} width={22} name={"search-normal"}/>

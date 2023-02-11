@@ -8,6 +8,6 @@ type Props = {
 
 export function Top({ children }: Props) {
     return (
-        <header className={"top flex flex-col gap-8 p-6"}>{children}</header>
+        <header className={"top flex flex-col p-6"}>{children}</header>
     );
 }

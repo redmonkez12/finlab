@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import {Icon} from "@/components/icon/Icon";
+import { Icon } from "@/components/icon/Icon";
 import Image from "next/image";
 
 import "./card.css";
@@ -12,9 +12,9 @@ type Props = {
 export function Card({ title, action }: Props) {
     return (
         <div className={"card p-6"}>
-            <div className={"flex items-center"}>
-                <div className={"flex items-center"}>
-                    <div className={"card-title font-semibold text-base"}>{title}</div>
+            <div className={"flex items-center top-card"}>
+                <div className={"flex items-center h-full"}>
+                    <div className={"card-title text-base"}>{title}</div>
                     <Icon name={"info-circle"} height={18} width={18}/>
                 </div>
 

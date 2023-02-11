@@ -8,6 +8,7 @@ import { Title } from "@/components/title/Title";
 import { Navigation, NavigationItem } from "@/components/navigation/Navigation";
 import { Card } from "@/components/card/Card";
 import { CardAction } from "@/components/cardAction/CardAction";
+import "./page.css";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -37,17 +38,19 @@ export default function DashboardPage() {
             <Top>
                 <Menu/>
 
-                <div>
+                <div className={"pt-6"}>
                     <Title label={"Welcome back, Rainer Yaeger 👏🏻"}/>
                     <Breadcrumbs items={breadcrumbs}/>
                 </div>
 
-                <div>
+                <div className={"mt-8"}>
                     <Navigation items={navigationItems}/>
                 </div>
             </Top>
 
-            <Card title={"Total balance"} action={<CardAction/>}/>
+            <div className="card-container">
+                <Card title={"Total balance"} action={<CardAction/>}/>
+            </div>
         </>
     );
 }

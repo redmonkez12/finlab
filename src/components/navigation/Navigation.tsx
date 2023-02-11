@@ -1,7 +1,8 @@
 import classNames from "classnames";
 
-import "./navigation.css";
 import { Icon } from "@/components/icon/Icon";
+
+import "./navigation.css";
 
 export type NavigationItem = {
     label: string;

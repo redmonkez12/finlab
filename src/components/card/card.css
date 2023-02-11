@@ -1,3 +1,8 @@
+.card {
+    border-radius: 16px;
+    background-color: #fff;
+}
+
 .card-title {
     color: #1A1C1E;
     letter-spacing: -0.02rem;
@@ -9,4 +14,8 @@
     line-height: 150%;
     height: 48px;
     gap: 9px;
+}
+
+.card > .top-card {
+    height: 24px;
 }
