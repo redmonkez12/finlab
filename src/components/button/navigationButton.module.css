@@ -1,0 +1,13 @@
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A2A6AA;
+    padding: 14px 34px;
+    border: none;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}

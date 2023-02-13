@@ -1,0 +1,21 @@
+.hamburger {
+    display: block;
+}
+
+.logo {
+    display: none;
+}
+
+.navigation {
+    margin-left: 64px;
+}
+
+@media only screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+    }
+}

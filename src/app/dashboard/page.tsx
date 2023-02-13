@@ -51,13 +51,19 @@ export default function DashboardPage() {
                 </div>
             </Top>
 
-            <div className="card-container">
+            <div className="card-container flex flex-col gap-6">
                 <Card title={"Total balance"} action={<CardAction/>}>
                     <>
                         <Button label={"Transfer"}
                                 icon={<Image width={24} height={24} src={"/images/card-send.svg"} alt={"arrow"}/>}/>
                         <Button label={"Receive"}
                                 icon={<Image width={25} height={25} src={"/images/card-receive.svg"} alt={"arrow"}/>}/>
+                    </>
+                </Card>
+
+                <Card title={"Expense Category"} action={<CardAction/>}>
+                    <>
+
                     </>
                 </Card>
             </div>

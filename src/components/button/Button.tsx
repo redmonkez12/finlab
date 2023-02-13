@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 type Props = {
     type?: "submit" | "reset" | "button";
     label: string;
-    icon: ReactNode;
+    icon?: ReactNode;
 };
 
 export function Button({ type = "button", label, icon }: Props) {
